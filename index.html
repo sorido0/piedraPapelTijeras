@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Piedra, Papel, Tijera</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="ico.jpg">
+</head>
+
+<body>
+    <main class="Mijuego">
+        <h1>Piedra 🥌, Papel 📃, Tijera ✂</h1>
+        <p> Donde: <small> 1-Piedra 🥌, 2-Papel 📃, 3-Tijera ✂ </small> </p>
+
+        <section class="container" id="opcionesJugadoresSc">
+            <label class="fomr-label" for="opcionesJugadores"> Opciones de jugadores</label>
+            <select list="browsers" id="opcionesJugadores" name="opcionesJugadores" class="form-control" required>
+                <option value=""></option>
+                <option value="dosJugador"> 1 vs 1 </option>
+                <option value="unoJugadores"> 1 vs PC</option>
+
+            </select>
+        </section>
+
+        <form action="action" class="container" id="form">
+
+            <br>
+            <div id="dosJugadores" class="container d-none" action="submit">
+
+                <label for="player1" required>Jugador 1</label>
+                <select name="player1" id="player1" class="form-select" required>
+                    <option value=""></option>
+                    <option value="piedra"> Piedra </option>
+                    <option value="papel"> Papel </option>
+                    <option value="tijera"> Tijera </option>
+                </select>
+                <br>
+
+                <label for="player2">Jugador 2</label>
+                <select name="player2" id="player2" class="form-select" required>
+                    <option value=""></option>
+                    <option value="piedra">Piedra</option>
+                    <option value="papel"> Papel </option>
+                    <option value="tijera"> Tijera </option>
+                </select>
+
+                <button type="submit" id="btnJugar1V1" class="btn btn-primary m-2 justify-content-center align-content-center">Jugar</button>
+
+            </div>
+
+            <div id="unJugador" class="container d-none m-2 justify-content-center align-content-center">
+                <label for="player">Jugador</label>
+                <select name="player" id="player" class="form-select" required>
+                    <option value=""></option>
+                    <option value="piedra"> Piedra </option>
+                    <option value="papel"> Papel </option>
+                    <option value="tijera"> Tijera </option>
+                </select>
+
+                <button type="click" id="btnJugar" class="btn btn-light m-2 d-block mx-auto">Jugar</button>
+
+            </div>
+
+            
+            <!-- <button type="submit" id="btnJugar" value="submit" class="btn btn-primary m-2 justify-content-center align-content-center">Jugar</button> -->
+        </form>
+        <div class="container" role="alert" id="mostrar">
+            <h4 class="" id="resultados"> </h4>
+            <p id="pcjuega"> </p>
+        </div>
+
+        
+    </main>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

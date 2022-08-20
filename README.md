@@ -1,2 +1,1 @@
-# piedraPapelTijeras
-Mi primer juego 
+# Mi primer jugador de videojuegos
